@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Upload products CSV/XLSX</title>
+</head>
+<body>
+  <h1>Upload products CSV/XLSX</h1>
+  {% if messages %}
+    <ul>
+      {% for m in messages %}
+        <li>{{ m.tags }} — {{ m }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload & Import</button>
+  </form>
+
+  <p>Example file should contain columns: <strong>sku, name, category, price, stock_qty, status</strong></p>
+</body>
+</html>

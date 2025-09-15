@@ -1,0 +1,44 @@
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+
+# Media (user uploads)
+media/
+
+# Static files (collected for production)
+staticfiles/
+static/
+
+# Jupyter / notebooks
+*.ipynb_checkpoints
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Pip cache / build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/
