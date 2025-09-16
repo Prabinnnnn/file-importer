@@ -66,4 +66,40 @@ A Django-based system that allows uploading an Excel/CSV product file, parsing t
 5. Admin can manage products (edit, delete, filter, search).  
 6. Data can be exported back to CSV/Excel when needed.
 
+
+## Setup Instructions
+
+### 1. Clone Repository
+git clone https://github.com/your-username/django-product-importer.git
+cd django-product-importer
+
+### 2. Create Virtual Environment
+python -m venv .venv
+
+### Activate the environment:
+
+#### On Linux/Mac:
+
+source .venv/bin/activate
+
+### On Windows (PowerShell):
+
+.venv\Scripts\activate
+
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+### 4. Run Migrations
+python manage.py migrate
+
+### 5. Create Superuser
+python manage.py createsuperuser
+
+### 6. Run Development Server
+
+python manage.py runserver
+
+## Access the project at http://127.0.0.1:8000/
 ---
